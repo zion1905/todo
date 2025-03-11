@@ -4,8 +4,7 @@ const taskInput = document.getElementById('taskInput');
     const scoreDisplay = document.getElementById('score');
 
     let score = 0;
-
-    function addTask() {
+   function addTask() {
       const taskText = taskInput.value.trim();
       if (taskText === '') {
         alert('Please enter a task!');
