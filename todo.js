@@ -4,6 +4,7 @@ const taskInput = document.getElementById('taskInput');
     const scoreDisplay = document.getElementById('score');
 
     let score = 0;
+    
    function addTask() {
       const taskText = taskInput.value.trim();
       if (taskText === '') {
@@ -31,6 +32,7 @@ const taskInput = document.getElementById('taskInput');
         score += 10;
         scoreDisplay.textContent = score;
       }
+      
     }
 
     addTaskBtn.addEventListener('click', addTask);
